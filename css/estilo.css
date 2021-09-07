@@ -1,0 +1,383 @@
+/* FUENTES TIPOGRAFICAS */
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url(../res/font/Montserrat-Regular.otf);
+}
+
+@font-face {
+	font-family: "LeagueGothic-Regular";
+	src: url(../res/font/LeagueGothic-Regular.otf);
+}
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url(../res/font/Montserrat-Bold.otf);
+}
+
+body {
+	font-family: "Montserrat-Regular";
+	color: var(--marron);
+}
+
+/*----- paleta de colores usada ------*/
+:root {
+
+	--negro: #000;
+	--blanco: #fff;
+	--mostaza: #FFC512;
+	--mClaro: #E1CEA7;
+	--marron: #432509;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*------ CODIGO MOBILE FIRST -----------*/
+
+.navbar {
+	background-color: var(--mostaza);
+}
+
+h1 {
+	background-image: url(../res/img/ico/logo_header.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+
+	width: 141px;
+	height: 42px;
+	margin: 0;
+	font-size: 0;
+
+
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+	color: var(--marron);
+}
+
+.texto-navbar {
+	font-family: "LeagueGothic-Regular";
+	font-size: 2em;
+
+
+}
+
+/*------------- MAIN ------------------*/
+
+h2 {
+	font-family: "LeagueGothic-Regular";
+	font-size: 3em;
+	line-height: normal;
+	text-align: center;
+	padding-top: 20vw;
+}
+
+h3 {
+	font-family: "LeagueGothic-Regular";
+	font-size: 2em;
+
+}
+
+h4 {
+	font-family: "Montserrat-Bold";
+	font-size: 1.3em;
+	line-height: normal;
+	text-align: center;
+	margin: 0.5em 0;
+}
+
+/*------------ BANNER ---------------*/
+.banner {
+	background-image: url(../res/img/banner_mobile.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 100vw;
+}
+
+
+/*------------ QUE OFRECEMOS ----------*/
+.card-body {
+	padding: 1em;
+	padding-top: 6.5em;
+}
+
+.saludable {
+	background-image: url(../res/img/ico/pedidos.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.rapido {
+	background-image: url(../res/img/ico/rapido.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.barato {
+	background-image: url(../res/img/ico/barato.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+/*------- MENU ---------------- */
+
+.platos {
+	background-color: var(--mClaro);
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	/*	padding: 0;*/
+}
+
+.guarnicion {
+	background-image: url(../res/img/ico/fondo-guarni2.png);
+	background-repeat: repeat;
+
+}
+
+/*------------- Carrousel -------------*/
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 40px;
+	height: 40px;
+	background-color: #FFC512;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+}
+
+/*--------------MAPA ----------------*/
+
+#mapa {
+	background-color: var(--mostaza);
+}
+
+.mapita {
+	line-height: 0;
+}
+
+.ubicacion iframe {
+	padding-top: 1.5em;
+	height: 50vh;
+	font-size: 0;
+}
+
+/*----------------- FOOTER ------------*/
+
+footer {
+	background-color: var(--mClaro);
+	background-image: url(../res/img/ico/logo_footer.svg);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size: 5em;
+	padding-top: 3em
+}
+
+#contacto {
+	margin-top: 1em;
+}
+
+.form input,
+.form textarea {
+
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: solid 2px var(--marron);
+	-webkit-box-sizing: border-box;
+
+}
+
+#enviar {
+	margin: auto;
+	width: 75%;
+	background-color: var(--marron);
+	border: 0;
+
+	-webkit-border-radius: 1.5em;
+	border-radius: 1.5em;
+
+	font-size: 1.2em;
+	font-family: "Montserrat-Regular";
+	-webkit-transition: all 500ms;
+	transition: all 500ms;
+}
+
+/*----- REDES --------------*/
+.redes {
+	padding: 1em 0;
+}
+
+.redes ul li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 0;
+
+}
+
+#face {
+	background-image: url(../res/img/ico/ico_redes-02.png);
+	background-repeat: no-repeat;
+
+}
+
+#insta {
+	background-image: url(../res/img/ico/ico_redes-02.png);
+	background-position: -82px 0;
+	background-repeat: no-repeat;
+
+}
+
+#twitter {
+	background-image: url(../res/img/ico/ico_redes-02.png);
+	background-position: -40px 0;
+	background-repeat: no-repeat;
+
+}
+
+#ped-ya {
+	background-image: url(../res/img/ico/ico_redes-02.png);
+	background-position: -126px 0;
+	background-repeat: no-repeat;
+
+}
+
+
+/*---------- tablet --------------*/
+@media only screen and (min-width:481px) {
+
+	/*------------ BANNER -----------------*/
+	.banner {
+		background-image: url(../res/img/banner_tablet.jpg);
+	}
+
+	h2 {
+		font-size: 4.5em;
+	}
+
+	h3 {
+		font-size: 2.8em;
+
+	}
+
+	h4 {
+		font-size: 1.8em;
+	}
+
+
+
+}
+
+
+/*--------------- PC -----------------*/
+
+@media only screen and (min-width:769px) {
+	.navbar {
+		padding: 0.2rem 1rem;
+	}
+
+	.nav-link {
+		padding: 0;
+	}
+
+	nav ul li a {
+		border-bottom: transparent solid 3px;
+	}
+
+	nav ul li a:hover {
+		border-bottom: solid 3px;
+	}
+	/*--------- BANNER -------------*/
+
+	
+
+	.banner {
+		background-image: url(../res/img/banner_pc.jpg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		height: 60vw;
+	}
+
+	h2 {
+
+		font-size: 5em;
+		text-align: left;
+		padding-left: 10vw;
+		padding-top: 10vw;
+	}
+
+	#txt-abajo {
+		display: block;
+	}
+
+	h3 {
+		font-size: 3em;
+	}
+
+
+	.introduccion p {
+		font-size: 1.5rem;
+	}
+
+	/*----------footer ----------*/
+
+	#enviar:hover {
+
+		-webkit-box-shadow: 0 7px 5px rgba(0, 0, 0, 0.19);
+
+		box-shadow: 0 7px 5px rgba(0, 0, 0, 0.19);
+		-webkit-transform: translateY(2px);
+		-ms-transform: translateY(2px);
+		transform: translateY(2px);
+	}
+
+	#face,
+	#insta,
+	#twitter,
+	#ped-ya {
+		-webkit-transition: all 500ms;
+	transition: all 500ms;
+	}
+
+	#face:hover,
+	#insta:hover,
+	#twitter:hover,
+	#ped-ya:hover {
+
+		-webkit-box-shadow: 0 7px 5px rgba(0, 0, 0, 0.19);
+
+		box-shadow: 0 7px 5px rgba(0, 0, 0, 0.19);
+		-webkit-transform: translateY(2px);
+		-ms-transform: translateY(2px);
+		transform: translateY(2px);
+	}
+
+
+
+
+	.redes {
+		padding-top: 30%;
+
+	}
+
+
+	.guarnicion ul li,
+	.bebidas ul li {
+		list-style: none;
+	}
+
+	.guarnicion ul li {
+		padding-bottom: 1.5em
+	}
+
+	/* -------- DATOS ALUMNO --------------*/
+	.datos {
+		padding: 5%;
+	}
+
+	.datos ul {
+		padding: 1em 3em;
+	}
+}
